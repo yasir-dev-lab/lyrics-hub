@@ -4,7 +4,7 @@ import { Search, Filter } from 'lucide-react';
 // Import SongCard here to avoid circular dependency
 import { SongCard } from './SongCard.jsx';
 
-export function SongList({ songs, onDelete, onView, genres }) {
+export function SongList({ songs, onDelete, genres }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
 
@@ -89,7 +89,6 @@ export function SongList({ songs, onDelete, onView, genres }) {
                 key={song.id}
                 song={song}
                 onDelete={onDelete}
-                onView={onView}
               />
             ))}
           </div>
