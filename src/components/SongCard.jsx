@@ -1,6 +1,13 @@
 import { Music, Calendar, Disc, Trash2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-export function SongCard({ song, onDelete, onView }) {
+export function SongCard({ song, onDelete }) {
+  const navigate = useNavigate();
+
+  const handleView = () => {
+    navigate(`/song/${song.id}`);
+  };
+
   return (
     <div className="neo-card rounded-none p-6 relative group">
       {/* Genre Badge */}
@@ -46,7 +53,7 @@ export function SongCard({ song, onDelete, onView }) {
         {/* Actions */}
         <div className="flex gap-3 pt-4">
           <button
-            onClick={() => onView(song)}
+            onClick={handleView}
             className="neo-btn neo-btn-primary flex-1"
           >
             View Lyrics

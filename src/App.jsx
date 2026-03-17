@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Header, Hero, UploadForm, SongList, SongModal, Footer } from './components';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
+import { Header, Hero, UploadForm, SongList, Footer } from './components';
+import { SongDetail } from './components/SongDetail';
 import { useSongs } from './hooks/useSongs';
 
-function App() {
+function HomePage() {
   const { songs, addSong, deleteSong, getGenres } = useSongs();
-  const [selectedSong, setSelectedSong] = useState(null);
-
+  
   const handleUpload = (songData) => {
     addSong(songData);
   };
@@ -14,14 +14,6 @@ function App() {
     if (window.confirm('Are you sure you want to delete this song?')) {
       deleteSong(id);
     }
-  };
-
-  const handleView = (song) => {
-    setSelectedSong(song);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedSong(null);
   };
 
   return (
@@ -33,17 +25,45 @@ function App() {
         <SongList
           songs={songs}
           onDelete={handleDelete}
-          onView={handleView}
           genres={getGenres()}
         />
       </main>
       <Footer />
-      
-      {/* Song Detail Modal */}
-      {selectedSong && (
-        <SongModal song={selectedSong} onClose={handleCloseModal} />
-      )}
     </div>
+  );
+}
+
+function SongDetailPage() {
+  const { id } = useParams();
+  const { getSongById, deleteSong } = useSongs();
+  const song = getSongById(id);
+  
+  if (!song) {
+    return (
+      <div className="min-h-screen bg-neo-background flex items-center justify-center">
+        <div className="neo-card rounded-none p-12 text-center">
+          <h2 className="text-4xl font-black uppercase tracking-tight mb-4">
+            Song Not Found
+          </h2>
+          <a href="/" className="neo-btn neo-btn-primary">
+            Back to Home
+          </a>
+        </div>
+      </div>
+    );
+  }
+  
+  return <SongDetail song={song} onDelete={deleteSong} />;
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/song/:id" element={<SongDetailPage />} />
+      </Routes>
+    </Router>
   );
 }
 
