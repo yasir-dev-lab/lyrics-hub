@@ -1,0 +1,76 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "album": "A Night at the Opera",
+      "year": 1975,
+      "genre": "Rock",
+      "lyrics": "Is this the real life?\nIs this just fantasy?\nCaught in a landslide,\nNo escape from reality\n\nOpen your eyes,\nLook up to the skies and see,\nI'm just a poor boy, I need no sympathy,\nBecause I'm easy come, easy go,\nLittle high, little low,\nAny way the wind blows doesn't really matter to me, to me"
+    },
+    {
+      "id": "2",
+      "title": "Imagine",
+      "artist": "John Lennon",
+      "album": "Imagine",
+      "year": 1971,
+      "genre": "Pop",
+      "lyrics": "Imagine there's no heaven\nIt's easy if you try\nNo hell below us\nAbove us only sky\n\nImagine all the people\nLiving for today\nAh\n\nImagine there's no countries\nIt isn't hard to do\nNothing to kill or die for\nAnd no religion too"
+    },
+    {
+      "id": "3",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "album": "Nevermind",
+      "year": 1991,
+      "genre": "Grunge",
+      "lyrics": "Load up on guns, bring your friends\nIt's fun to lose and to pretend\nShe's over-bored and self-assured\nOh no, I know a dirty word\n\nHello, hello, hello, how low\nHello, hello, hello, how low\nHello, hello, hello, how low\nHello, hello, hello, how low"
+    },
+    {
+      "id": "4",
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "album": "Hotel California",
+      "year": 1976,
+      "genre": "Rock",
+      "lyrics": "On a dark desert highway\nCool wind in my hair\nWarm smell of colitas\nRising up through the air\n\nUp ahead in the distance\nI saw a shimmering light\nMy head grew heavy and my sight grew dim\nI had to stop for the night"
+    },
+    {
+      "id": "5",
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "album": "Thriller",
+      "year": 1982,
+      "genre": "Pop",
+      "lyrics": "She was more like a beauty queen from a movie scene\nI said don't mind, but what do you mean, I am the one\nWho will dance on the floor in the round\nShe said I am the one, who will dance on the floor in the round\n\nShe told me her name was Billie Jean, as she caused a scene\nThen every head turned with eyes that dreamed of being the one\nWho will dance on the floor in the round"
+    },
+    {
+      "id": "6",
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "album": "Appetite for Destruction",
+      "year": 1987,
+      "genre": "Rock",
+      "lyrics": "She's got a smile that it seems to me\nReminds me of childhood memories\nWhere everything was as fresh as the bright blue sky\n\nNow and then when I see her face\nShe takes me away to that special place\nAnd if I stared too long, I'd probably break down and cry"
+    },
+    {
+      "id": "7",
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan",
+      "album": "Highway 61 Revisited",
+      "year": 1965,
+      "genre": "Folk Rock",
+      "lyrics": "Once upon a time you dressed so fine\nThrew the bums a dime in your prime, didn't you?\nPeople call say 'beware doll, you're bound to fall'\nYou thought they were all kidding you\n\nYou used to laugh about\nEverybody that was hanging out\nNow you don't talk so loud\nNow you don't seem so proud"
+    },
+    {
+      "id": "8",
+      "title": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "album": "Are You Experienced",
+      "year": 1967,
+      "genre": "Rock",
+      "lyrics": "Purple haze all in my brain\nLately things don't seem the same\nActin' funny, but I don't know why\n'Scuse me while I kiss the sky\n\nPurple haze all around\nDon't know if I'm coming up or down\nAm I happy or in misery?\nWhatever it is, that girl put a spell on me"
+    }
+  ]
+}
